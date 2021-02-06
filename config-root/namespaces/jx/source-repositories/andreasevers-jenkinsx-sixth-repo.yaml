@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: andreasevers
+    provider: github
+    repository: jenkinsx-sixth-repo
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: andreasevers-jenkinsx-sixth-repo
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/andreasevers/jenkinsx-sixth-repo.git
+  org: andreasevers
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkinsx-sixth-repo
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/andreasevers/jenkinsx-sixth-repo
