@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        andreasevers/jenkinsx-sixth-repo: true
         andreasevers/jx3-gke-vault-sflabs: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        andreasevers/jenkinsx-sixth-repo: merge
         andreasevers/jx3-gke-vault-sflabs: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - andreasevers/jx3-gke-vault-sflabs
+        - andreasevers/jenkinsx-sixth-repo
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - andreasevers/jx3-gke-vault-sflabs
+        - andreasevers/jenkinsx-sixth-repo
       target_url: http://dashboard-jx.104.155.150.223.nip.io
 kind: ConfigMap
 metadata:
