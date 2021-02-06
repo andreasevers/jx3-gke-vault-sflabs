@@ -40,7 +40,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 104.155.150.223.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -cert-manager.
